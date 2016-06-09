@@ -10,6 +10,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import java.lang.String;
 import static org.junit.Assert.*;
 
 /**
@@ -20,11 +21,18 @@ public class StringCalculatorTest {
     
              
     @Test
-    public void testAditionIsCorrect() throws Exception { 
-         StringCalculator calculator;
-         calculator = new StringCalculator(String cadena);
-            assertNotNull(calculator);
+    public void TestCanInitializeStringCalculator() throws Exception { 
+        StringCalculator calculator = new StringCalculator();
+            assertNotNull(calculator);      
     }
+    
+    @Test
+    public void TestCadenaNoNula() throws Exception {
+        String cadena = " ";
+        StringCalculator calculator = new StringCalculator();
+        assertNotNull(calculator.Add(cadena));
+    }
+    
     
     /*public StringCalculatorTest() {
     }
