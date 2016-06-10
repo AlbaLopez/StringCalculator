@@ -28,37 +28,7 @@ public class StringCalculator {
         }
         return sumatorio;
     }
-    
-    
-    
-    
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-String patron = "([0-9]{8})([A-Z])";//Indicamos que queremos 8 numeros, seguidos de una letra (DNI)
-//Con el parentesis se puede obtener solo una parte de la coincidencia
-Pattern p = Pattern.compile(patron);
  
-String texto = "Juan Garcia : 12345678X";
-Matcher matcher = p.matcher(texto);
- 
-while(matcher.find()){
-    System.out.printf("NIF Encontrado : %s - %s",
-            matcher.group(1),//Con el group, decimos que parámetro queremos mostrar
-            matcher.group(2));
-}
-    
-    
-
     public static int[] separarNumeros(String cadena) {
 
         String delimiters = "(,)|(\\s)";
