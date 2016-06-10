@@ -32,6 +32,12 @@ public class StringCalculatorTest {
         StringCalculator calculator = new StringCalculator();
         assertNotNull(calculator.Add(cadena));
     }
+    @Test
+    public void TestSepararNumeros() throws Exception {
+        String cadena = " ";
+        StringCalculator calculator = new StringCalculator();
+        assertNotNull(calculator.separarNumeros(cadena));
+    }
     
     
     /*public StringCalculatorTest() {
