@@ -93,7 +93,7 @@ public class StringCalculator {
         System.out.println("Prueba cambiando a dos delimitadores");
         System.out.println("Resultado esperado : 359 , Resultado obtenido :  " + calculator.Add(prueba4) + "\n");
 
-        String prueba5 = "\\[;][a]\n-100,256,3";
+        String prueba5 = "\\[;][a]\n-100;256;3";
         System.out.println("Erros número negativo");
         calculator.Add(prueba5);
 
